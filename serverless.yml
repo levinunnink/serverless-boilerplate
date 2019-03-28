@@ -1,0 +1,49 @@
+service: 
+  name: serverless-boilerplate
+
+plugins:
+  - serverless-api-cloudfront
+  - serverless-apigw-binary
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: local
+  region: us-west-2
+  versionFunctions: false
+  environment:
+    STAGE: ${self:custom.stage}
+    TEST_ENV_VARIABLE: ${env:TEST_ENV_VARIABLE}
+  
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  apiCloudFront:
+    domain: example-domain.com
+    certificate: arn:aws:example:certificate...
+    region: us-west-2
+    logging:
+      bucket: data.logs.s3.amazonaws.com
+      prefix: example-domain.com
+  apigwBinary:
+    types:
+      - '*/*'
+
+functions:
+  handle-http:
+    handler: lib/http.handle
+    memorySize: 256
+    events:
+      - http: ANY {path+}
+        contentHandling: CONVERT_TO_BINARY
+      - http: ANY /
+        contentHandling: CONVERT_TO_BINARY
+  handle-sns:
+    handler: lib/sns.handle
+    memorySize: 256
+    events:
+      - sns: ${self:custom.stage}-redact-data
+  handle-scheduled:
+    handler: lib/scheduled.handle
+    events:
+      - schedule: rate(1 hour)
+

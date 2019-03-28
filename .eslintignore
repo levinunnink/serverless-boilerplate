@@ -1,0 +1,6 @@
+coverage
+node_modules
+.coverage-cache
+public
+*.config.js
+*.spec.js

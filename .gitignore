@@ -1,0 +1,14 @@
+# package directories
+node_modules
+jspm_packages
+build
+coverage
+.nyc_output
+coverage
+
+*.log
+.DS_STORE
+
+# Serverless directories
+.serverless
+.eslintcache

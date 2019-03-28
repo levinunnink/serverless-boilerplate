@@ -1,0 +1,42 @@
+{
+  "name": "serverless-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for serverless apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "sns": "serverless invoke local --function "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levinunnink/serverless-boilerplate.git"
+  },
+  "keywords": [
+    "serverless",
+    "boilerplate",
+    "example"
+  ],
+  "author": "levi.nunnink@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levinunnink/serverless-boilerplate/issues"
+  },
+  "homepage": "https://github.com/levinunnink/serverless-boilerplate#readme",
+  "dependencies": {
+    "aws-sdk": "^2.431.0",
+    "aws-serverless-express": "^3.3.6",
+    "express": "^4.16.4",
+    "serverless": "^1.39.1",
+    "serverless-api-cloudfront": "^0.9.5",
+    "serverless-apigw-binary": "^0.4.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10"
+  }
+}
