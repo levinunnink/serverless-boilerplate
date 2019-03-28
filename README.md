@@ -1,6 +1,6 @@
 # Serverless Boilerplate
 
-A starter boilerplate for building serverless applications.
+A starter boilerplate for nodeJS serverless applications.
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/levinunnink/serverless-boilerplate/master/LICENSE)
 [![Stars](https://img.shields.io/github/stars/levinunnink/serverless-boilerplate.svg?style=social&label=Star&maxAge=3600)](https://github.com/levinunnink/serverless-boilerplate/stargazers)
