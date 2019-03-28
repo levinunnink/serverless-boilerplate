@@ -17,7 +17,7 @@
     "example"
   ],
   "author": "levi.nunnink@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/levinunnink/serverless-boilerplate/issues"
   },
