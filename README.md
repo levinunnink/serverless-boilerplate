@@ -18,7 +18,6 @@ It is meant merely as a launching point that contains some common libraries for 
 - **nodeJS:** This boilerplate is written in nodeJS 8.10 and many of the plugins we're using are only available for node.
 - **AWS Lambda:** This boilerplate assumes that you're going to deploy your serverless functions to AWS and not another cloud provider.
 - **Docker & Make:** For building and deploying serverless functions.
-- **AWS CLI:** For testing SNS-triggered functions.
 
 ## Getting started
 
