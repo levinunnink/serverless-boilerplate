@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/levinunnink/serverless-boilerplate#readme",
   "dependencies": {
-    "aws-sdk": "^2.431.0",
+    "aws-sdk": "^2.814.0",
     "aws-serverless-express": "^3.3.6",
     "express": "^4.16.4",
     "serverless": "^1.39.1",
