@@ -25,7 +25,7 @@
   "dependencies": {
     "aws-sdk": "^2.431.0",
     "aws-serverless-express": "^3.3.6",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "serverless": "^1.39.1",
     "serverless-api-cloudfront": "^0.9.5",
     "serverless-apigw-binary": "^0.4.4"
